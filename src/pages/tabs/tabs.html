@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<ion-tabs [color]="isAndroid ? 'danger' : 'primary'">
+  <!-- Indicates with tabsPage should handle each tab here -->
+  <ion-tab active="true" [root]="tab1Root" tabTitle="Contacts" tabIcon="contact"></ion-tab>
+  <ion-tab  [root]="tab2Root" tabTitle="Track" tabIcon="analytics"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Groups" tabIcon="contacts"></ion-tab>
+</ion-tabs>
+</ion-content>
