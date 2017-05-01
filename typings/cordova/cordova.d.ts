@@ -6,6 +6,7 @@
 // Copyright (c) Microsoft Open Technologies, Inc.
 // Licensed under the MIT license.
 /// <reference path="Contacts.d.ts"/>
+/// <reference path="CallNumber.d.ts"/>
 
 
 interface Cordova {

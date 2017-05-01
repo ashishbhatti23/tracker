@@ -15,6 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ArraySortPipe } from '../pipes/alphabeticalPipe';
 import { StatusBar } from '@ionic-native/status-bar';
 import {enableProdMode} from '@angular/core';
+import { IonAlphaScrollModule } from 'ionic2-alpha-scroll';
 
 enableProdMode();
 @NgModule({
@@ -32,7 +33,8 @@ enableProdMode();
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, {tabsPlacement: 'top'})
+    IonicModule.forRoot(MyApp, {tabsPlacement: 'top'}),
+    IonAlphaScrollModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
